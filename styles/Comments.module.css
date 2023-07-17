@@ -1,0 +1,44 @@
+.comments {
+  height: 150px;
+  /* background-color: red; */
+  overflow-y: scroll;
+  border-top: 1px whitesmoke solid;
+  padding: 10px;
+}
+
+.comments > .upperPart {
+  display: flex;
+  padding: 10px;
+}
+
+.comments > .upperPart > input {
+  margin-left: 15px;
+  outline-width: 0;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.comments > .upperPart {
+  border-bottom: 1px whitesmoke solid;
+}
+
+.comments > .bottomPart {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.comments > .bottomPart > .commentInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.comments > .bottomPart > .commentInfo > .mainInfo {
+  display: flex;
+  align-items: center;
+}
+
+.comments > .bottomPart > .commentInfo > .mainInfo > p {
+  margin-left: 10px;
+}

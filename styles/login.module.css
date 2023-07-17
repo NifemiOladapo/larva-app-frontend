@@ -1,0 +1,78 @@
+.login {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.login > form {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 1.8rem 0px rgb(10% 10% 10% / 10%);
+}
+
+.login > form > h1 {
+  margin-bottom: 30px;
+  color: red;
+}
+
+.login > form > .input {
+  outline-width: 0;
+  border-width: 0px;
+  height: 30px;
+  border-radius: 5px;
+  width: 250px;
+  margin-bottom: 20px;
+  border: solid grey 1px;
+  padding: 15px;
+}
+
+.login > form > .submit__button {
+  width: 125px;
+  padding: 10px 35px 10px 35px;
+  border-radius: 50px;
+  color: white;
+  border: 0;
+  background-color: red;
+  cursor: pointer;
+}
+
+.login > form > .registerDiv {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login > form > .registerDiv > .link {
+  text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .login > form > .input {
+    width: 210px;
+  }
+}
+
+@media (max-width: 285px) {
+  /* .login > form > .input {
+    width: 210px;
+  } */
+  .login > form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 250px) {
+  .login > form > .input {
+    width: 190px;
+  }
+  .login > form > .registerDiv {
+    flex-direction: column;
+  }
+}

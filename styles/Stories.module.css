@@ -1,0 +1,10 @@
+.stories {
+  padding: 15px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  /* flex: 1; */
+  overflow-x: scroll;
+  /* justify-content: space-between; */
+}

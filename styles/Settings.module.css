@@ -1,0 +1,89 @@
+.settings {
+  height: 89dvh;
+  width: 100dvw;
+  /* background-color: blanchedalmond; */
+  padding: 15px;
+  overflow: scroll;
+}
+
+.settings > form {
+  /* background-color: blue; */
+  padding: 20px;
+  box-shadow: 0px 0px 1.8rem 0px rgb(10% 10% 10% / 10%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.settings > form > h2 {
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+.settings > form > .topPart {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.settings > form > .topPart > input {
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  outline-width: 0;
+  border: 1px solid whitesmoke;
+}
+
+.bottomPart {
+  width: 100%;
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+
+.settings > form > .bottomPart > input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  outline-width: 0;
+  border: 1px solid whitesmoke;
+  /* background-color: red; */
+}
+
+.settings > form > input {
+  height: 40px;
+  border: 0;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+.settings > .deleteDiv {
+  padding: 20px;
+  box-shadow: 0px 0px 1.8rem 0px rgb(10% 10% 10% / 10%);
+  width: fit-content;
+  border-radius: 2px;
+}
+
+.settings > .deleteDiv > h2 {
+  margin-bottom: 15px;
+}
+
+.settings > .deleteDiv > button {
+  background-color: red;
+  padding: 15px;
+  outline-width: 0;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+@media (max-width: 400px) {
+  .settings > form > .topPart {
+    flex-direction: column;
+  }
+  .settings > form > .topPart > input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

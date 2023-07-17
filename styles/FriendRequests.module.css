@@ -1,0 +1,260 @@
+.friendrequests {
+  display: flex;
+  padding: 30px;
+  width: 100dvw;
+  flex-direction: column;
+  overflow: scroll;
+  height: 90dvh; /* background-color: green; */
+}
+
+.friendrequests > .receivedFriendRequests {
+  width: 100%;
+  /* background-color: blue; */
+  padding: 15px;
+  box-shadow: 0px 0px 1.8rem 0px rgb(10% 10% 10% / 10%);
+  border-radius: 20px;
+  height: 80dvh;
+  margin-bottom: 30px;
+}
+
+.friendrequests > .sentFriendRequests {
+  width: 100%;
+  box-shadow: 0px 0px 1.8rem 0px rgb(10% 10% 10% / 10%);
+  border-radius: 20px;
+  padding: 15px;
+  height: 80dvh;
+}
+
+.friendrequests > .sentFriendRequests > h2 {
+  text-align: center;
+}
+
+.friendrequests > .receivedFriendRequests > h2 {
+  text-align: center;
+}
+
+.friendrequests > .receivedFriendRequests > .userInfoWrapper {
+  height: 90%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.friendrequests > .sentFriendRequests > .userInfoWrapper {
+  height: 90%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.friendrequests > .sentFriendRequests > .userInfoWrapper > .friendRequestInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .userInfo {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  /* background-color: red; */
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .userInfo {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  /* background-color: red; */
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .userInfo
+  > h2 {
+  margin-left: 10px;
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .userInfo
+  > h2 {
+  margin-left: 10px;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo {
+  display: flex;
+}
+
+.friendrequests > .sentFriendRequests > .userInfoWrapper > .friendRequestInfo {
+  display: flex;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper {
+  display: flex;
+  flex: 0.5;
+  /* background-color: blue; */
+  justify-content: flex-end;
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper {
+  display: flex;
+  flex: 0.5;
+  /* background-color: blue; */
+  justify-content: flex-end;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > div
+  > p {
+  margin-left: 10px;
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > div
+  > p {
+  margin-left: 10px;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > .btn1 {
+  background-color: indigo;
+  color: white;
+}
+
+.friendrequests
+  > .sentFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > .btn1 {
+  background-color: red;
+  color: white;
+}
+
+.friendrequests
+  > .receivedFriendRequests
+  > .userInfoWrapper
+  > .friendRequestInfo
+  > .friendrequestsButtonsWrapper
+  > .btn2 {
+  background-color: red;
+  color: white;
+  margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  .friendrequests {
+    flex-direction: column;
+  }
+  .friendrequests > .receivedFriendRequests {
+    margin-bottom: 30px;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .friendrequests > .sentFriendRequests {
+    width: 100%;
+    /* background-color: blue; */
+  }
+}
+
+@media (max-width: 700px) {
+  .friendrequests > .receivedFriendRequests {
+    padding: 5px;
+  }
+  .friendRequestInfo {
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .friendrequestsButtonsWrapper {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .friendrequests {
+    padding: 5px;
+  }
+  .friendrequestsButtonsWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .friendrequests
+    > .receivedFriendRequests
+    > .userInfoWrapper
+    > .friendRequestInfo
+    > .friendrequestsButtonsWrapper
+    > .btn2 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

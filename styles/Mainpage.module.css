@@ -1,0 +1,26 @@
+.mainpage {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-between;
+  height: 100%;
+  width: 100dvw;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* overflow-y: scroll; */
+}
+
+@media (max-width: 550px) {
+  .mainpage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainpage {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: red; */
+  }
+}
